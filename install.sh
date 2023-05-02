@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. util.sh
+. ./util.sh
 
 info "Setting up Codespaces"
 
@@ -30,6 +30,11 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 ## Forgit - This tool is designed to help you use git more efficiently. It's lightweight and easy to use.
 git clone https://github.com/wfxr/forgit.git ${HOME}/bin/forgit
+
+## Install granted - https://docs.commonfate.io/granted/getting-started/
+curl -OL releases.commonfate.io/granted/v0.11.1/granted_0.11.1_linux_x86_64.tar.gz
+sudo tar -zxvf ./granted_0.11.1_linux_x86_64.tar.gz -C /usr/local/bin/
+rm granted_0.11.1_linux_x86_64.tar.gz
 
 ## k9s - Kubernetes CLI To Manage Your Clusters In Style!
 curl -sS https://webinstall.dev/k9s | bash
