@@ -20,7 +20,7 @@ if [ ! -d $HOME/.aws ]; then
 fi
 
 # Place the current company where you are working at here
-bash ./hadrian.sh
+bash ./hadrian/hadrian.sh
 
 info "All done. Have fun!"
 
