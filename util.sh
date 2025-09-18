@@ -1,11 +1,19 @@
-#!/bin/sh
+#!/bin/bash
 
 info() {
 	echo "[info] $@"
 }
 
 error() {
-	error "[error] $@"
+	echo "[error] $@"
+}
+
+warn() {
+	echo "[warn] $@"
+}
+
+fatal() {
+	echo "[fatal] $@"
 	exit 1
 }
 
