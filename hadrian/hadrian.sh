@@ -20,7 +20,7 @@ info "Installling Silver Searcher"
 brew install the_silver_searcher
 
 info "Running the secrets BASH script"
-bash hadrian/hadrian.secrets
+[ -f hadrian/hadrian.secrets ] && bash hadrian/hadrian.secrets || warn "hadrian.secrets doesn't exist"
 
 info "Change the directory to the DevPod workspace ID"
 cd /workspaces/$DEVPOD_WORKSPACE_ID
