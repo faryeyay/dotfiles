@@ -1,7 +1,2 @@
-<<<<<<< Updated upstream
-#*.key filter=git-crypt diff=git-crypt
-#*.secrets filter=git-crypt diff=git-crypt
-=======
 *.key eol=lf filter=git-crypt diff=git-crypt
 *.secrets eol=lf filter=git-crypt diff=git-crypt
->>>>>>> Stashed changes
