@@ -13,3 +13,12 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Add Krew for Kubectl
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Persist the history from the terminal for VS Code
+HISTFILE=${ZDOTDIR:-$HOME}/.history
+HISTSIZE=500
+SAVEHIST=500
+export HISTSIZE=500
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+alias history="history 1 -1"
