@@ -1,0 +1,47 @@
+alias tf='tofu'
+alias tfa='tofu apply'
+alias tfc='tofu console'
+alias tfd='tofu destroy'
+alias tff='tofu fmt'
+alias tffr='tofu fmt --recursive'
+alias tfg='tofu graph'
+alias tfim='tofu import'
+alias tfin='tofu init'
+alias tfo='tofu output'
+alias tfp='tofu plan'
+alias tfpr='tofu providers'
+alias tfr='tofu refresh'
+alias tfsh='tofu show'
+alias tft='tofu taint'
+alias tfut='tofu untaint'
+alias tfv='tofu validate'
+alias tfw='tofu workspace'
+alias tfs='tofu state'
+alias tffu='tofu force-unlock'
+alias tfwst='tofu workspace select'
+alias tfwsw='tofu workspace show'
+alias tfssw='tofu state show'
+alias tfwde='tofu workspace delete'
+alias tfwls='tofu workspace list'
+alias tfsls='tofu state list'
+alias tfwnw='tofu workspace new'
+alias tfsmv='tofu state mv'
+alias tfspl='tofu state pull'
+alias tfsph='tofu state push'
+alias tfsrm='tofu state rm'
+alias tfay='tofu apply -auto-approve'
+alias tfdy='tofu destroy -auto-approve'
+alias tfinu='tofu init -upgrade'
+alias tfpde='tofu plan --destroy'
+
+
+alias k=kubectl
+alias kx=kubectx
+alias kns=kubens
+
+alias gitrefs="gcm && git fetch origin '+refs/r/*:refs/r/*'&& git log origin main --oneline --decorate-refs='r/'"
+alias gcan="git commit --amend --no-edit"
+alias gprom="git pull --rebase origin main | git pull --rebase origin master"
+alias gpro="git pull --rebase origin"
+alias glp='git log --oneline --decorate-refs="refs/r/*"'
+alias gs='git status'
