@@ -13,3 +13,6 @@ pkg_manager
 ## Update timezone
 ${sudo_cmd} ln -fs /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 ${sudo_cmd} dpkg-reconfigure --frontend noninteractive tzdata
+
+# Add push.autoSetupRemote true to the git config
+[ `command -v git >/dev/null` ] && git config --global push.autoSetupRemote true
