@@ -31,3 +31,4 @@ for repo in "${repositories[@]}"; do
   git clone git@github.com:Hadrian-MTV/$repo
 done
 
+$PKG_MGR install -y xdg-utils
