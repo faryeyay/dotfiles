@@ -1,7 +1,7 @@
 [profile management]
 sso_session = hadrian
 sso_account_id = 106006173564
-sso_role_name = ViewOnlyAccess
+sso_role_name = AdministratorAccess
 region = us-gov-west-1
 output = json
 [sso-session hadrian]
@@ -11,12 +11,24 @@ sso_registration_scopes = sso:account:access
 [profile development]
 sso_session = hadrian
 sso_account_id = 108630233581
-sso_role_name = S3BucketAccess
+sso_role_name = AdministratorAccess
 region = us-gov-west-1
 output = json
 [profile production]
 sso_session = hadrian
 sso_account_id = 108682256561
-sso_role_name = DataScientist
+sso_role_name = AdministratorAccess
+region = us-gov-west-1
+output = json
+[profile datum]
+sso_session = hadrian
+sso_account_id = 233994363898
+sso_role_name = AdministratorAccess
+region = us-gov-west-1
+output = json
+[profile transit]
+sso_session = hadrian
+sso_account_id = 106109277341
+sso_role_name = AdministratorAccess
 region = us-gov-west-1
 output = json
