@@ -2,7 +2,7 @@
 
 . ./util.sh
 
-repositories=("infra" "voco" "charts")
+repositories=("infra" "voco" "charts" "data-charts" "hadrian" "flow")
 
 info "Initializing git-crypt"
 # Initialize git-crypt 
